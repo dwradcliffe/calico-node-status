@@ -1,0 +1,15 @@
+---
+name: calico-node-status
+
+up:
+  - homebrew:
+    - glide
+  - go: '1.7'
+
+commands:
+  build: go build -v
+  run-built: ./calico-node-status
+  test: go test ./...
+
+packages:
+  - git@github.com:Shopify/dev-shopify.git

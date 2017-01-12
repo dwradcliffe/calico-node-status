@@ -1,0 +1,12 @@
+package: github.com/Shopify/calico-node-status
+import:
+- package: github.com/Sirupsen/logrus
+  version: ^0.11.0
+- package: github.com/bugsnag/bugsnag-go
+  version: ^1.1.1
+- package: k8s.io/client-go
+  version: v2.0.0-alpha.1
+  subpackages:
+  - kubernetes
+  - rest
+  - tools/clientcmd
